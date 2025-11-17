@@ -1,0 +1,73 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color:#000;
+    color:#fff;
+}
+
+.continar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 400px;
+    width: 60%;
+    top:150px;
+    left:320px;
+}
+.conter{
+    font-size:56px;
+}
+.plus10,.muinas10{
+    position: absolute;
+    margin-bottom:80px;
+    cursor: pointer;
+    font-size: 22px;
+    background: transparent;
+    color:#fff;
+    border: transparent;
+    border-radius: 50%;
+}
+.plus10:active,.muinas10:active{
+    animation: click 0.3s;
+    color: #868686;
+}
+.plus10{
+    left:95.5%;
+}
+.plus,.muinas{
+    width: 40px;
+    height: 40px;
+    font-size:32px;
+    border-radius: 50%;
+    border:1px #686868 solid;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    color:#fff;
+}
+.plus:active,.muinas:active{
+    animation: click 0.3s;
+    background: #868686;
+}
+.icon{
+    position: absolute;
+    font-size:25px;
+    top:18px;
+    left:48%;
+    color:#fff;
+    cursor:pointer;
+}
+.icon:active{
+    animation: click 0.3s;
+    color:#686868;
+}
+
+@keyframes click {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
