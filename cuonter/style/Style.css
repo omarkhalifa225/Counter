@@ -1,0 +1,85 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color:#000;
+    color:#fff;
+}
+
+.continar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:18%;
+    margin-left:3%;
+}
+.conter{
+    font-size:56px;
+}
+.plus10{
+    margin-bottom:80px;
+    margin-left:200px;
+    cursor: pointer;
+    font-size: 22px;
+    background: transparent;
+    color:#fff;
+    border: transparent;
+}
+.muinas10{
+     margin-bottom:80px;
+     margin-right: 200px;
+    cursor: pointer;
+    font-size: 22px;
+    background: transparent;
+    color:#fff;
+    border: transparent;
+    border-radius: 50%;   
+}
+.plus10:active,.muinas10:active{
+    animation: click 0.3s;
+    color: #868686;
+}
+.plus,.muinas{
+    width: 40px;
+    height: 40px;
+    font-size:32px;
+    border-radius: 50%;
+    border:1px #686868 solid;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    color:#fff;
+}
+.plus{
+    margin-top:9px;
+    margin-left: -35px;
+}
+.muinas{
+    position: relative;
+    right:233px;
+    top:3px;
+}
+.plus:active,.muinas:active{
+    animation: click 0.3s;
+    background: #868686;
+}
+.icon{
+    position: absolute;
+    font-size:25px;
+    top:150px;
+    left:51%;
+    color:#fff;
+    cursor:pointer;
+}
+.icon:active{
+    animation: click 0.3s;
+    color:#686868;
+}
+
+@keyframes click {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
